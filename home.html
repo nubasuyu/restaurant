@@ -8,20 +8,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="favicon.png">
  <title>HAYMAH SIGNATURE RESTAURANT</title> 
- <link rel="stylesheet" href="./css/style.css">
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ <link rel="stylesheet" href="./css/style.css">
+ 
 
    
   
 </head>
  <body>  
   <header>
-    <nav>
-      <ul class="list-unstyled d-flex flex-column flex-sm-row justify-content-start align-items-start align-items-sm-center"> 
-        <li><img src="./image/HAYMAH LOGO.png"/></li>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About us</a></li>
-        <li><a href="contactus.html">Contact Us</a></li>
+    <nav class="container-fluid">
+      <ul class="row" class="list-unstyled d-flex flex-column justify-content-start align-items-start align-items-sm-center"> 
+        <li class="col-6"><img src="./image/HAYMAH LOGO.png"/></li>
+        <li class="col-2"><a href="home.html">Home</a></li>
+        <li class="col-2"><a href="#about">About us</a></li>
+        <li class="col-2"><a href="#contactus">Contact Us</a></li>
       </ul>
     </nav>
   
@@ -29,86 +30,145 @@
   
 
   <main>
- <h1>Haymah Signature Restaurant Menu</h1>
- 
-    <h2>Appetizers</h2>  
-  <div class="container">
-    <ul>     
-    <li>          
-     <strong>Caprese Salad</strong>       
-     <p>Fresh tomatoes, mozzarella, and basil drizzled with balsamic glaze.</p> 
-     <img src="./image/caprisee salad.jpg"/>
-    </li>  
-    <li>          
-        <strong>Smoked mackerel mousse</strong>       
-        <p>warm smoked mackerel filet, fresh dill weed and creme fraiche.</p> 
-        <img src="./image/smoked_mackerel.jpg"/>
-    </li>    
-    <li>          
-        <strong>pickled baby onions</strong>       
-        <p>tiny little onions, lightly pickled in vinegar.</p> 
-        <img src="./image/pickled-peal-onion-5.jpg"/>
-    </li>
-  </ul>  
-  </div> 
- 
-  <h2>Main Courses</h2> 
-  <div class="container">
-   <ul>   
-     <li>      
+
+    <h1>Haymah Signature Restaurant Menu</h1>
+    
+    <div class="row">
+      <div class="col-12 col-md-3" style="background-image: url('./image/sticky-toffee-pudding.jpg'); background-size: cover;">
+       <ul class="row" >
+          <a href="#Appetizers">Appetizers</a>
+          <a href="#Maincourses">Main Courses</a>
+          <a href="#Desserts">Desserts</a>
+        </ul>
+
+         
+          <h3 id="contactus"> Contact Us</h3>
+          <span>
+          <form class="form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="fname"><br>
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email">
+            <input type="submit" value="Submit">
+          </form>
+        </span>
+
+               
+      </div>
+      <div class="col-12 col-md-9 justify-content-center">
+        <h2 id="Appetisers">Appetizers</h2>  
+        
+          <ul class="row">     
+            <li class="col-12 col-md-6 col-lg-4">          
+            <strong>Caprese Salad</strong>       
+            <p>Fresh tomatoes, mozzarella, and basil drizzled with balsamic glaze.</p> 
+            <img src="./image/caprisee salad.jpg"/>
+          </li>  
+          <li class="col-12 col-md-6 col-lg-4">          
+              <strong>Smoked mackerel mousse</strong>       
+              <p>warm smoked mackerel filet, fresh dill weed and creme fraiche.</p> 
+              <img src="./image/smoked_mackerel.jpg"/>
+          </li>    
+          <li class="col-12 col-md-6 col-lg-4">          
+              <strong>pickled baby onions</strong>       
+              <p>tiny little onions, lightly pickled in vinegar.</p> 
+              <img src="./image/pickled-peal-onion-5.jpg"/>
+          </li>
+        </ul>  
+
+        <h2 id="Maincourses">Main Courses</h2> 
+    <ul class="row">   
+     <li class="col-12 col-md-6 col-lg-4">      
       <strong>Grilled Salmon</strong>     
        <p>Salmon fillet seasoned and grilled to perfection, served with lemon butter sauce.</p> 
        <img src="./image/grilled-salmon-final-2.jpg"/>         
      </li>     
-     <li>      
+     <li class="col-12 col-md-6 col-lg-4">      
         <strong>Poached chicken</strong>     
          <p>Chicken pieces covered with water and letting them simmer on the stovetop until the chicken is cooked through.</p>
          <img src="./image/Poached-Chicken-Recipe-Video.jpg"/>   
      </li>    
-     <li>      
+     <li class="col-12 col-md-6 col-lg-4">      
         <strong>fondant potato</strong>     
          <p>Potato roasted in butter and chicken/beef stock.</p> 
          <img src="./image/potato foundant.jpg"/>  
     </li>     
    
    </ul>
-  </div>  
 
-
-
+   <h2 id="Desserts">Desserts</h2>  
+  <ul class="row">     
+    <li class="col-12 col-md-6 col-lg-4">    
+          <strong>Chocolate Fondue</strong>     
+        <p>Assorted fruits and marshmallows served with rich chocolate fondue.</p>
+        <img src="./image/fondue-fountain_chocolate.jpg"/>
+      </li>
+      <li class="col-12 col-md-6 col-lg-4">    
+          <strong>Sticky Tofee Pudding</strong>     
+        <p>Dark, dense sponge cake made with chopped dates that is topped with a sweet toffee sauce.</p> 
+        <img src="./image/sticky-toffee-pudding.jpg"/>   
+        
+      </li>    
+      <li class="col-12 col-md-6 col-lg-4">    
+          <strong>Roasted Pineaple,</strong>     
+        <p>A sweet tropical fruit with a tough leathery skin and spiky leaves on top.</p>  
+        <img src="./image/Roasted Pineaple.jpg"/>  
+        
+      </li>    
+      
+      </ul> 
+      </div> 
+    </div>
   
- <h2>Desserts</h2>  
- <div class="container">
-  <ul>     
-   <li>    
-        <strong>Chocolate Fondue</strong>     
-       <p>Assorted fruits and marshmallows served with rich chocolate fondue.</p>
-       <img src="./image/fondue-fountain_chocolate.jpg"/>
-    </li>
-    <li>    
-        <strong>Sticky Tofee Pudding</strong>     
-       <p>Dark, dense sponge cake made with chopped dates that is topped with a sweet toffee sauce.</p> 
-       <img src="./image/sticky-toffee-pudding.jpg"/>   
-       
-    </li>    
-    <li>    
-        <strong>Roasted Pineaple,</strong>     
-       <p>A sweet tropical fruit with a tough leathery skin and spiky leaves on top.</p>  
-       <img src="./image/Roasted Pineaple.jpg"/>  
-       
-    </li>    
+
+  <section class="row">
+
+    <h3 id="about" style="font-weight: bolder; text-align: center;">
+      About Us
+    </h3>
+    <div class="col-6">
+      <img src="./image/RESTAURANT IMAGE.jpg" class="img-fluid my-2 h-auto" alt="">
+    </div>
+
+    <div class="col-6">
+      
+      <p style="width: 80%;">
+        Welcome to Haymah Signature Restaurant, where great food meets warm hospitality. Nestled in the heart of Ibadan City, we take pride in serving freshly prepared dishes crafted from the finest ingredients. Our menu celebrates a blend of timeless flavors and innovative culinary techniques, designed to delight every palate. Whether you're here for a casual meal or a special occasion, our team is dedicated to making your dining experience unforgettable. Come in, relax, and savor the taste of Haymah Signature Restaurant
+      </p>
     
-    </ul> 
-  </div>
-</div>
+    </div>
+
+  </section>
+  
 </main>
 
-<footer>
-   <p><a href="contactus.html" target="_blank">Contact us for all your recipes</a></p> 
+
+<footer class="text-center text-white" style="background-color: #f1f1f1; width: 100%; justify-items: center; margin: auto;">
+  <ul class="row">     
+    <li class="col-12 col-md-6 col-lg-3">          
+    <img src="./image/facebook.png"/>
+  </li>  
+  <li class="col-12 col-md-6 col-lg-3">          
+      <img src="./image/twitter_3256013.png"/>
+  </li>    
+  <li class="col-12 col-md-6 col-lg-3">          
+      <img src="./image/Instagram.png"/>
+  </li>
+  <li class="col-12 col-md-6 col-lg-3">          
+    <img src="./image/image.png"/>
+</li>
+</ul>
+  
+<p class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+  © 2024 Copyright:
+  <a class="name" href="#">Haymah Signatures Restaurant</a>
+
 </footer>
-</body>
+
+
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
 
  </html>
